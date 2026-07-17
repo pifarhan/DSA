@@ -8,8 +8,7 @@ class Solution {
             sum += arr[right];
 
             if (right - left + 1 == k) {
-                int avg = sum / k;
-                if (avg >= threshold)
+                if (sum >= k * threshold)
                     count++;
                 sum -= arr[left];
                 left++;
