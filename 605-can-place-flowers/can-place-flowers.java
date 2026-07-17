@@ -18,7 +18,7 @@ class Solution {
             }
         }
 
-        if (count == n) {
+        if (count >= n) {
             return true;
         }
     }
