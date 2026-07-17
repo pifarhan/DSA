@@ -14,9 +14,7 @@ class Solution {
                     flowerbed[i] = 1; // Plant the flower
                     count++;
 
-                    if (count >= n) {
-                        return true;
-                    }
+                    
                 }
             }
         }
