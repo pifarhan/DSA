@@ -27,8 +27,8 @@ class Solution {
             char ch = s.charAt(i);
 
             if ("aeiouAEIOU".indexOf(ch) != -1) {
-                sb.append(vowels.get(index++));
-                
+                sb.append(vowels.get(index));
+                index++;
             } else {
                 sb.append(ch);
             }
