@@ -4,22 +4,18 @@ class Solution {
         Arrays.sort(g);
         Arrays.sort(s);
 
-        int i = 0; // child
-        int j = 0; // cookie
-        int count = 0;
+        int i = 0, j = 0, count = 0;
 
         while (i < g.length && j < s.length) {
 
             if (s[j] >= g[i]) {
-                count++;
                 i++;
-                j++;
-            } else {
-                j++;
+                count++;
             }
+
+            j++;
         }
 
         return count;
-        
     }
 }
