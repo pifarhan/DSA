@@ -11,7 +11,7 @@ class Solution {
             end = Math.max(end,freq[s.charAt(i)-'a']);
             if(i == end) {
                 ans.add(end-start+1);
-                start = end+1;
+                start = i+1;
             }
 
         }
