@@ -6,7 +6,7 @@ class Solution {
             right = Math.max(right,pile);
 
         }
-        int ans = 0;
+        int ans = right;
 
         while(left<=right) {
             int mid = left +(right-left)/2;
