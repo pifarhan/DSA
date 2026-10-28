@@ -1,19 +1,18 @@
 class Solution {
-    static int helper(int n, int[]dp) {
-        if(n==1|n==2){
+    public int helper(int[] dp, int n) {
+        if(n==1|n==2) {
             return n;
         }
-        if(dp[n] !=-1){
+
+        if(dp[n] != -1) {
             return dp[n];
         }
-        return dp[n]= helper(n-1,dp)+helper(n-2,dp);
-
+        return dp[n]=helper(dp,n-1)+helper(dp,n-2);
     }
     public int climbStairs(int n) {
         int dp[] = new int[n+1];
         Arrays.fill(dp,-1);
-        return helper(n,dp);
-
+        return helper(dp,n);
         
     }
 }
